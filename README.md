@@ -3,6 +3,10 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
 ![SCIPY](https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white)
+
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
@@ -31,22 +35,32 @@ The experiments simulate CO<sub>2</sub> decay curves resulting from instantaneou
 
 1. Clone this repository:
 
-```bash git clone https://github.com/your-username/co2-changepoint-analysis.git```
+```bash 
+git clone https://github.com/your-username/co2-changepoint-analysis.git
+```
 
 
-```bash cd co2-changepoint-analysis```
+```bash 
+cd co2-changepoint-analysis
+```
 
 2. Create and activate the Conda environment:
 
-```bash conda env create -f environment.yml```
+```bash 
+conda env create -f environment.yml
+```
 
-```bash conda activate changepoint_analysis```
+```bash 
+conda activate changepoint_analysis
+```
 
 ## Usage
 
 Run the analysis by executing the `main.py` script:
 
-```bash python main.py```
+```bash 
+python main.py
+```
 
 This will:
 
@@ -69,9 +83,9 @@ The script generates the following outputs in the `results/` directory:
 
 The analysis employs the following methods:
 
-1. **Data Loading**: CO2 concentration data is loaded from a CSV file.
+1. **Data Loading**: CO<sub>2</sub> concentration data is loaded from a CSV file.
 2. **Changepoint Detection**: Uses the Window method from the [ruptures](https://centre-borelli.github.io/ruptures-docs/) library to detect significant changes in CO<sub>2</sub> concentration trends.
 3. **Statistical Evaluation**: Applies t-tests to evaluate the statistical significance of detected changepoints.
-4. **Visualization**: Generates plots to visualize the CO2 decay curves and detected changepoints.
+4. **Visualization**: Generates plots to visualize the CO<sub>2</sub> decay curves and detected changepoints.
 5. **Summary Statistics**: Computes mean and standard deviation of changepoint characteristics across different scenarios.
 
