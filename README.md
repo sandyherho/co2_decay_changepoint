@@ -63,7 +63,7 @@ python main.py
 This will:
 
 1. Load the CO<sub>2</sub> concentration data.
-2. Generate an initial plot of all CO2 scenarios.
+2. Generate an initial plot of all CO<sub>2</sub> scenarios.
 3. Perform changepoint analysis on each scenario.
 4. Create plots showing detected changepoints.
 5. Generate summary statistics.
