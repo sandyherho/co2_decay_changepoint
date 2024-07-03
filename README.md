@@ -1,16 +1,15 @@
 # CO<sub>2</sub> Changepoint Analysis
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
 ![SCIPY](https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
-[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
-
-
-This repository contains code for analyzing changepoints in CO<sub>2</sub> concentration scenarios derived from cGENIE experiments (1,000,000 years). The analysis focuses on CO<sub>2</sub> decay curves resulting from instantaneous releases under different scenarios (1,000 - 20,000 PgC).
+This repository contains code for analyzing changepoints in atmospheric CO<sub>2</sub> concentration scenarios derived from cGENIE experiments (1,000,000 years). The analysis focuses on CO<sub>2</sub> decay curves resulting from instantaneous releases under different scenarios (1,000 - 20,000 PgC).
 
 ## Data Source
 
