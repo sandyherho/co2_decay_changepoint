@@ -39,7 +39,7 @@ git clone git@github.com:sandyherho/co2_decay_changepoint.git
 
 
 ```bash 
-cd co2-changepoint-analysis
+cd co2_decay_changepoint
 ```
 
 2. Create and activate the Conda environment:
