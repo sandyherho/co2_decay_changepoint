@@ -148,9 +148,9 @@ def plot_results(time, series_data, all_changepoints, output_path):
         axs[i].set_xlim(time.min(), time.max())
         axs[i].set_ylim(0, series_data.max() * 1.05)
         if i >= 15:
-            axs[i].set_xlabel('Time [years]', fontsize=10)
+            axs[i].set_xlabel('Time [years]', fontsize=16)
         if i % 5 == 0:
-            axs[i].set_ylabel(r'pCO$_2$ anomaly [ppmv]', fontsize=10)
+            axs[i].set_ylabel(r'pCO$_2$ anomaly [ppmv]', fontsize=16)
 
     plt.tight_layout()
     plt.savefig(output_path, dpi=300)
