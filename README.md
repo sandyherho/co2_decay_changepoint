@@ -34,7 +34,7 @@ The experiments simulate CO<sub>2</sub> decay curves resulting from instantaneou
 1. Clone this repository:
 
 ```bash 
-git clone https://github.com/your-username/co2-changepoint-analysis.git
+git clone https://github.com/sandyherho/co2_decay_changepoint/
 ```
 
 
