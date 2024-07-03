@@ -4,7 +4,7 @@
 Changepoint Analysis Module
 
 This module provides functions for detecting and analyzing changepoints in time series data,
-specifically focused on the different cGENIE CO2 release scenarios.
+specifically focused on CO2 concentration scenarios.
 
 Author: Sandy Herho <sandy.herho@email.ucr.edu>
 Date: July 2, 2024
@@ -49,11 +49,12 @@ def plot_all_series(time, series_data, output_path):
         plt.plot(time, series, label=f'{i+1},000 PgC')
     
     plt.xscale('log')
-    plt.xlabel('Time [years]', fontsize=16)
-    plt.ylabel(r'pCO$_2$ anomaly [ppmv]', fontsize=16)
-    plt.xlim([1e0, 1e6 + 1])
-    plt.ylim([0, 1e4 + 1])
+    plt.xlabel('Time [log10(years)]', fontsize=12)
+    plt.ylabel('pCO2 anomaly [ppmv]', fontsize=12)
+    plt.title('CO2 Concentration Scenarios', fontsize=14)
     plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.xlim(time.min(), time.max())
+    plt.ylim(0, series_data.max() * 1.05)
     plt.tight_layout()
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     plt.close()
@@ -144,10 +145,12 @@ def plot_results(time, series_data, all_changepoints, output_path):
         for cp in changepoints:
             axs[i].axvline(time[cp], color='r', linestyle='--', alpha=0.5)
         axs[i].set_title(f'{i+1},000 PgC Scenario')
+        axs[i].set_xlim(time.min(), time.max())
+        axs[i].set_ylim(0, series_data.max() * 1.05)
         if i >= 15:
-            axs[i].set_xlabel('Time [years]', fontsize=16)
+            axs[i].set_xlabel('Time [years]', fontsize=10)
         if i % 5 == 0:
-            axs[i].set_ylabel(r'pCO$_2$ anomaly [ppmv]', fontsize=16)
+            axs[i].set_ylabel(r'pCO$_2$ anomaly [ppmv]', fontsize=10)
 
     plt.tight_layout()
     plt.savefig(output_path, dpi=300)
